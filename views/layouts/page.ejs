@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- THIS IS HEADER & FOOTER  -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font Rubik -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title><%= blocks.title%></title>
+  </head>
+  <body>
+
+    <div class="container">
+      <% if(message.info) {%> 
+      <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+        <%= message.info  %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <% } %> 
+     
+      <!-- Start header -->
+      <div class="row mt-4">
+
+        <% if (auth) { %>
+          <div class="col-sm-6 d-flex">
+            <a href="http://localhost:5000/api/home" class="me-3">
+              <img class="logo" src="/images/Logo.png" alt="logo">
+            </a>
+            <h1 class="fw-bold">What To Cook, <%= firstName %>  <%= lastName %>?</h1>
+          </div>
+          <div class="col-sm-6 login">
+            <form action="/api/logout" method="POST">
+              <button class="btn btn-warning text-white btn-lg me-3" type="submit">Log Out</button>
+            </form>
+          </div>
+          <% } else { %>
+            <div class="col-sm-6 d-flex">
+              <a href="http://localhost:5000/api/home" class="me-3">
+                <img src="/images/Logo.png" alt="logo" style="height: 60px;">
+              </a>
+              <h1 class="fw-bold">What To Cook?</h1>
+            </div>
+            <div class="col-sm-6 login">
+              <a href="http://localhost:5000/api/auth" class="btn btn-warning text-white btn-lg me-3" type="submit">Log in</a>
+              <a href="http://localhost:5000/api/user" class="btn btn-warning text-white btn-lg me-3" type="submit">Sign up</a>
+            </div>
+          <%} %>  
+
+      </div>
+      <!-- End header -->
+
+      <!-- Start body -->
+      <%- body -%> 
+      <!-- End body -->
+
+      <!-- Start footer -->
+      <div class="row">
+        <div class="col-12 mt-5">
+          <p class="text-center">© 2021 BeCode</p>
+        </div>
+      </div>
+      <!-- End footer -->
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          // show the alert
+          setTimeout(function() {
+              $(".alert").alert('close');
+          }, 3000);
+        });
+    </script>
+
+  </body>
+</html>

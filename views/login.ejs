@@ -1,0 +1,32 @@
+<% layout('./layouts/page') %> 
+<% block('title', 'Log In') %>
+
+<div class="container">
+  <div class="row m-5">
+    <div class="col img-photo"></div>
+  </div>
+  <div class="row">
+    <div class="col d-flex flex-column">
+      <h1 class="mb-4 fw-bold">Connect me</h1>
+      <form action="/api/auth" method="POST">
+        <div class="mb-4">
+          <label for="login-email">Your email</label><br>
+          <input type="email" name="email" id="login-email" class="form-control">
+        </div>
+        
+        <div class="mb-4">
+          <label for="login-password">Choose a password</label><br>
+          <input type="password" name="password" id="login-password" class="form-control">
+        </div>
+        
+        <div class="d-grid mb-4">
+          <button class="btn btn-warning text-white btn-lg" type="submit">Log In</button>
+        </div>
+        <p>Don't have an account? <a href="http://localhost:5000/api/user">Sign up</a></p>
+      </form>
+      
+    </div>
+  </div>
+
+  </div>
+</div>

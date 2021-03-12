@@ -1,0 +1,313 @@
+<% layout('./layouts/page') %> 
+<% block('title', 'What to Cook') %>
+
+      <!-- Start body -->
+      <div class="row mt-4">
+        
+        <% if(locals.message){ %>
+          <div class="alert alert-success" role="alert">
+              <strong>Well done!</strong> <%=message.success%>
+          </div>
+        <% } %>
+
+        <!-- Start Nav-bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active fw-bolder" aria-current="page" href="http://localhost:5000/api/home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bolder" href="http://localhost:5000/api/me">My account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bolder" href="http://localhost:5000/api/grocery-list">Grocery list</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Nav-bar -->
+
+        <!-- Ingredients Part -->
+        <div class="col-4">
+          <h2 class="fw-bolder">Ingredients</h2>
+
+        <!-- Start Drop Down List Category Meal-->
+        <form method="POST" action="/api/home/find">
+          <!-- FISH -->
+          <fieldset>
+            <legend>
+              <img src="/images/fish.png" alt="fish">
+                <a class="btn text-start" href="#fishCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="fishCollapse">
+                  Fish
+                  <i class="fas fa-sort-down mx-2"></i>
+                </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="fishCollapse">
+              <div class="row">
+                <div class="col">
+                  <% fish.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "> <%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- FRUITS -->
+          <fieldset>
+            <legend>
+              <img src="/images/fruits.png" alt="fruits">
+              <a class="btn text-start" href="#fruitCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="fruitCollapse">
+                Fruits
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="fruitCollapse">
+              <div class="row">
+                <div class="col">
+                  <% fruits.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- VEGETABLE -->
+          <fieldset>
+            <legend>
+              <img src="/images/vegetables.png" alt="vegetables">
+              <a class="btn text-start" href="#vegetableCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="vegetableCollapse">
+                Vegetable
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="vegetableCollapse">
+              <div class="row">
+                <div class="col">
+                  <% vegetables.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- MEAT -->
+          <fieldset>
+            <legend>
+              <img src="/images/meats.png" alt="meat">
+              <a class="btn text-start" href="#meatCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="meatCollapse">
+                Meat
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="meatCollapse">
+              <div class="row">
+                <div class="col">
+                  <% meat.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- CEREAL -->
+          <fieldset>
+            <legend>
+              <img src="/images/snacks.png" alt="Snacks">
+              <a class="btn text-start" href="#cerealCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cerealCollapse">
+                Cereal
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="cerealCollapse">
+              <div class="row">
+                <div class="col">
+                  <% cereal.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- DESERT -->
+          <fieldset>
+            <legend>
+              <img src="/images/desserts.png" alt="desserts">
+              <a class="btn text-start" href="#desertCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="desertCollapse">
+                Desert
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="desertCollapse">
+              <div class="row">
+                <div class="col">
+                  <% desert.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- BAKING -->
+          <fieldset>
+            <legend>
+              <img src="/images/baking.png" alt="baking">
+              <a class="btn text-start" href="#bakingCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="bakingCollapse">
+                Baking
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="bakingCollapse">
+              <div class="row">
+                <div class="col">
+                  <% baking.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- MILK -->
+          <fieldset>
+            <legend>
+              <img src="/images/milk.png" alt="Milk">
+              <a class="btn text-start" href="#milkCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="milkCollapse">
+                Milk products
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="milkCollapse">
+              <div class="row">
+                <div class="col">
+                  <% milk.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- HERBS -->
+          <fieldset>
+            <legend>
+              <img src="/images/sauce1.png" alt="sauce">
+              <a class="btn text-start" href="#herbCollapse" type="button" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="herbCollapse">
+                Herbs and spices
+                <i class="fas fa-sort-down mx-2"></i>
+              </a>
+            </legend>
+            <div class="mb-3 collapse multi-collapse ingredientsCategory" id="herbCollapse">
+              <div class="row">
+                <div class="col">
+                  <% herbs.map(el => { %>
+                    <input name="searchItem" value="<%= el.food_name %>" type="checkbox" id="<%= el._id %> ">
+                    <label for="<%= el._id %> "><%= el.food_name %> </label><br>
+                  <% }) %> 
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="btn btn-warning text-white btn-lg me-3" type="submit">Find recipes</button>   
+        </form>
+        <!-- End Drop Down List Category Meal -->
+          
+        </div>
+
+        <!-- Main part -->
+        <div class="col-8">
+          
+          <!-- Search field -->
+          <form class="d-flex" method="POST" action="/api/home/find"> 
+            <div class="input-group mb-3">
+              <input name="searchItem" type="text" class="form-control" placeholder="Find your favorite recipe" aria-label="Username" aria-describedby="basic-addon1">
+              <span class="input-group-text">
+                <i class="fas fa-search">
+                <input type="submit" class="inputSearchField">
+              </i></span>
+            </div>
+          </form>
+
+          <!-- Start Recipe Part -->
+          <div class="row mb-5">
+            <% if (count) {%>
+            <p>We found <%= count  %> recipes</p>
+            <% } %>
+          
+            <!-- Recipe Cards Starts -->
+            <div class="col recipe-container">
+              <% recipes.map(el => { %>
+                <div class="col">
+                  <div class="card mb-4">
+                    <div class="row g-0">
+                      <div class="col d-flex align-items-center">
+                        <img src="<%= el.recipe.image %>" class="card-img rounded p-2" alt="recipe image">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h3 class="card-title d-flex justify-content-between">
+                            <%= el.recipe.label  %> 
+                          </h3>
+                          <ul class="card-text"><% el.recipe.ingredientLines.map(el => { %>
+                            <li><%= el %></li>
+                          <% }) %> 
+                          </ul>
+                          <div class="d-flex justify-content-start">
+                            <a href="<%= el.recipe.url %> " class="btn btn-warning me-5">Read recipe</a>
+                            <form action="/api/home/save" method="POST">
+                              <input type="hidden" name="recipeName" value="<%= el.recipe.label  %>">
+                              <input type="hidden" name="recipeImage" value="<%= el.recipe.image %>">
+                              <input type="hidden" name="recipeUrl" value="<%= el.recipe.url %> ">
+                              <input type="hidden" name="recipeIngredients" value="<%= el.recipe.ingredientLines %> ">
+                              <button type="submit" class="btn btn-warning">Save recipe</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <%})  %>  
+            </div>
+            
+            <!-- Recipe Cards Ends -->
+
+            <!-- Sort by button
+            <div class="col-3 sortby">
+              <button class="btn btn-warning text-white btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort by
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Time of cooking</a></li>
+                <li><a class="dropdown-item" href="#">Rating</a></li>
+                <li><a class="dropdown-item" href="#">Difficulties in cooking</a></li>
+              </ul>
+            </div> -->
+
+          </div>
+          <!-- End Recipe Part -->
+
+          <!-- End Main Part  -->
+        </div>
+      </div>
+     
+      <!-- End body -->

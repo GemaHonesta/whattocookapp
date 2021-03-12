@@ -1,0 +1,35 @@
+{
+  "name": "what-to-cook",
+  "version": "1.0.0",
+  "description": "site for help to cook",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-becode:becodeorg/BXL-Johnson-5.25-Client-Cooking.git"
+  },
+  "author": "Gema, Asad, Olga, BeCode Johnson 5.25",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.3",
+    "cookie-parser": "^1.4.5",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-flash-messages": "^0.1.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

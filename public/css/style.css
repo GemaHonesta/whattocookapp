@@ -1,0 +1,95 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.logo {
+  height: 60px;
+}
+
+.login,
+.sortby {
+  text-align: right;
+}
+
+.recipe-container {
+  height: 630px;
+  overflow-y: scroll;
+}
+
+.ingredientsCategory {
+  height: 300px;
+  width: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* hide scroll-bar for overflow */
+.ingredientsCategory::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.ingredientsCategory {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+.ingredientsCategory::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: transparent;
+}
+.ingredientsCategory::-webkit-scrollbar-thumb {
+  background-color: #d8d7d7;
+  border-radius: 20px;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+.inputSearchField {
+  visibility: hidden;
+  width: 10px;
+}
+
+.error-text {
+  font-size: 40px;
+}
+
+.shopItem-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.img-photo {
+  background: url("../images/login.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 375px) {
+  .img-photo {
+    height: 170px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .recipe-container {
+    height: 1200px;
+  }
+}

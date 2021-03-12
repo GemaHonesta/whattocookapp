@@ -1,0 +1,8 @@
+{
+<<<<<<< HEAD
+  "mongoURI": "mongodb+srv://Gema:uPinf5X4jzLlnROg@clustertarget.tarms.mongodb.net/What-To-Cook?retryWrites=true&w=majority"
+=======
+  "mongoURI": "mongodb+srv://OlgaK:123456789_olga_k@clustertarget.tarms.mongodb.net/What-To-Cook?retryWrites=true&w=majority",
+  "tokenSecret": "mysecrettoken"
+>>>>>>> a9222e868c494b5e9c24c7922181c100f81148c4
+}

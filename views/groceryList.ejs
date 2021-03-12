@@ -1,0 +1,96 @@
+<% layout('./layouts/page') %> 
+<% block('title', 'My Grocery List') %>
+
+<!-- Start body -->
+  <div class="row mt-4">
+    <!-- Start Nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" aria-current="page" href="http://localhost:5000/api/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="http://localhost:5000/api/me">My account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder" href="http://localhost:5000/api/grocery-list">Grocery list</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav-bar -->
+
+    <div class="row mb-3">
+      <div class="col">
+        <h1 class="mb-4">My purchases:</h1>
+      </div>
+       <!-- Add new item to grocery list -->
+      <div class="col mt-3">
+        <form action="/api/grocery-list/add" method="POST">
+          <div class="input-group mb-4">
+            <input name="shopItem" type="text" class="form-control" placeholder="Add new item" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-warning" type="button" id="button-addon2">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Recipes Block -->
+    <div class="row mb-5">
+      <!-- Start Grocery List -->
+      <div class="col p-3 shopItem-container">
+        <ul class="list-group">
+          <% items.map((el, index) => { %>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-10">
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  <%= el.itemName %>
+                </div>
+                <div class="col-xs-2 d-flex justify-content-end">
+                  <button type="button" class="btn me-2 btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#target<%= index%>"><i class="fas fa-pencil-alt"></i></button>
+                  <form action="/api/grocery-list/delete" method="POST">
+                    <input type="hidden" name="idShopItem" value="<%= el._id  %>">
+                    <button type="submit" class="btn btn-sm btn-outline-warning"><i class="fas fa-times"></i></button>
+                  </form>
+                </div>
+                <!-- Modal for change item in database -->
+                <div class="modal fade" id="target<%= index%>" tabindex="-1" aria-labelledby="<%= el.itemName%>" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="<%= el.itemName%>">Change my grocery item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <form method="POST" action="/api/grocery-list/update">
+                        <div class="modal-body">
+                          <input class="form-control" type="text" placeholder="<%= el.itemName %>" name="updateShopItem">
+                          <input type="hidden" name="idShopItem" value="<%= el._id  %>">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="submit" class="btn btn-warning text-white">Save changes</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          <% }) %> 
+        </ul>
+        <!-- End Grocery List -->
+
+
+      </div>
+      
+    </div>
+
+<!-- End body -->

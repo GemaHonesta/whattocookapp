@@ -1,0 +1,78 @@
+<% layout('./layouts/page') %> 
+<% block('title', 'My recipes') %>
+
+<!-- Start body -->
+  <div class="row mt-4">
+    <!-- Start Nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" aria-current="page" href="http://localhost:5000/api/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder" href="http://localhost:5000/api/me">My account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="http://localhost:5000/api/grocery-list">Grocery list</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav-bar -->
+
+    <!-- Recipes Block -->
+    <div class="col-sm">
+      <h1 class="mb-4">Your favorite recipes:</h1>
+
+      <div class="col recipe-container p-3">
+        <% recipes.map(el => { %>
+          <div class="col">
+            <div class="card mb-4">
+              <div class="row g-0">
+                <div class="col d-none d-sm-flex align-items-center">
+                  <img src="<%= el.recipeImage %>" class="card-img rounded p-2" alt="recipe image">
+                </div>
+                <div class="col">
+                  <div class="card-body">
+                    <h3 class="card-title d-flex justify-content-between fw-bold">
+                      <%= el.recipeName  %> 
+                    </h3>
+                    <ul class="card-text list-group list-group-flush mb-3"><% el.recipeIngredients.trim().split(',').map(elem => { %>
+                      <li class="list-group-item d-flex">
+                        <form action="/api/grocery-list/add" method="POST">
+                          <input type="hidden" name="shopItem" value="<%= elem %> ">
+                          <button class="me-3 btn btn-outline-warning btn-sm" type="submit"><i class="fas fa-shopping-bag"></i></button>
+                        </form>
+                        <%= elem %>
+                      </li>
+                    <% }) %> 
+                    </ul>
+                    <div class="d-flex justify-content-start">
+                      <a href="<%= el.recipeUrl %> " class="btn btn-warning me-5">Read recipe</a>
+                      <form action="/api/me/delete" method="POST">
+                        <input type="hidden" name="recipeId" value="<%= el._id  %>">
+                        <button type="submit" class="btn btn-warning">Delete from my favorite</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <%})  %>  
+      </div>
+      
+    </div>
+
+    <!-- Image Block-->
+    <div class="d-none d-lg-flex col-sm align-items-center ">
+      <img class="img-fluid" src="/images/AccountImage.png" alt="some products">
+    </div>
+  </div>
+<!-- End body -->

@@ -1,0 +1,609 @@
+﻿food_name;group;sub_group
+Beef;Meat;Red meat
+Lamb;Meat;Red meat
+Sausage;Meat;Red meat
+Bacon;Meat;Pig's meat
+Pork;Meat;Pig's meat
+Bison;Meat;Red meat
+Deer;Meat;Venison
+Goat;Meat;Red meat
+Elk;Meat;Venison
+Rabbit;Meat;White meate
+Chikken;Meat;Poultry
+Goose;Meat;Poultry
+Hen;Meat;Poultry
+Duck;Meat;Poultry
+Hare;Meat;White meat
+Ostrich;Meat;Poultry
+Pheasant;Meat;Poultry
+Quail;Meat;Poultry
+Ptarmigan;Meat;Poultry
+Turkey;Meat;Poultry
+Wild boar;Meat;Pig's meat
+Abalone;Sea food;Mollusks
+Alaska blackfish;Sea food;Fishes
+Tuna;Sea food;Fishes
+Anchovy;Sea food;Fishes
+Eel;Sea food;Fishes
+Pollock;Sea food;Fishes
+Beluga;Sea food;Cetaceans
+Crab;Sea food;Crustaceans
+Mussel;Sea food;Mollusks
+Whitefish;Sea food;Fishes
+Burbot;Sea food;Fishes
+Carp;Sea food;Fishes
+Catfish;Sea food;Fishes
+Lobster;Sea food;Crustaceans
+Octopus;Sea food;Mollusks
+Conch;Sea food;Mollusks
+Crayfish;Sea food;Crustaceans
+Crustaceans;Sea food;Crustaceans
+Cuttlefish;Sea food;Mollusks
+Dolphin fish;Sea food;Fishes
+Oyster;Sea food;Mollusks
+Flatfish;Sea food;Fishes
+Garfish;Sea food;Fishes
+Sturgeon;Sea food;Fishes
+Grouper;Sea food;Fishes
+Haddock;Sea food;Fishes
+Kelp;Sea food;Seaweed
+Lake trout;Sea food;Fishes
+Pike;Sea food;Fishes
+Cod;Sea food;Fishes
+Halibut;Sea food;Fishes
+Herring;Sea food;Fishes
+Mackerel;Sea food;Fishes
+Perch;Sea food;Fishes
+Oyster;Sea food;Mollusks
+Salmon;Sea food;Fishes
+Sardine;Sea food;Fishes
+Pikeperch;Sea food;Fishes
+Rainbow trout;Sea food;Fishes
+Red algae;Sea food;Seaweed
+Caviar;Sea food;Caviar
+Sablefish;Sea food;Fishes
+Scallop;Sea food;Mollusks
+Sea cucumber;Sea food;Other Sea food
+Seatrout;Sea food;Fishes
+Shark;Sea food;Fishes
+Shrimp;Sea food;Crustaceans
+Snail;Sea food;Mollusks
+Snapper;Sea food;Fishes
+Snow crab;Sea food;Crustaceans
+Squid;Sea food;Mollusks
+Striped bass;Sea food;Fishes
+Striped mullet;Sea food;Fishes
+Sturgeon;Sea food;Fishes
+Swordfish;Sea food;Fishes
+Tuna;Sea food;Fishes
+Tilefish;Sea food;Fishes
+Frog;Sea food;Amphibians
+Turbot;Sea food;Fishes
+Wakame;Sea food;Seaweed
+Dorada;Sea food;Fishes
+Walleye;Sea food;Fishes
+Butter substitute;Baking goods;Substitutes
+Coffee substitute;Baking goods;Substitutes
+Cooking oil;Baking goods;Baking goods
+Cream substitute;Baking goods;Substitutes
+Edible shell;Baking goods;Wrappers
+Egg substitute;Baking goods;Substitutes
+Gelatin;Baking goods;Baking goods
+Ice cream cone;Baking goods;Wrappers
+Ketchup;Baking goods;Condiments
+Leavening agent;Baking goods;Baking goods
+Meat bouillon;Baking goods;Baking goods
+Milk substitute;Baking goods;Substitutes
+Molasses;Baking goods;Baking goods
+Mustard;Baking goods;Condiments
+Pectin;Baking goods;Baking goods
+Shortcrust pastry;Baking goods;Baking goods
+Puff pastry;Baking goods;Baking goods
+Yeast dough;Baking goods;Baking goods
+Pie filling;Baking goods;Baking goods
+Salad dressing;Baking goods;Dressings
+Salt;Baking goods;Seasonings
+Sauce;Baking goods;Sauces
+Spread;Baking goods;Baking goods
+Stuffing;Baking goods;Baking goods
+Sugar;Baking goods;Sugars
+Sugar substitute;Baking goods;Substitutes
+Syrup;Baking goods;Baking goods
+Tapioca pearl;Baking goods;Baking goods
+Topping;Baking goods;Baking goods
+Vinegar;Baking goods;Seasonings
+Wonton wrapper;Baking goods;Wrappers
+Apple cider;Beverages;Fermented beverages
+Beer;Beverages;Fermented beverages
+Berry wine;Beverages;Fermented beverages
+Energy drink;Beverages;Nutritional beverages
+Fortified wine;Beverages;Fortified wines
+Fruit juice;Beverages;Other beverages
+Fruit-flavor drink;Beverages;Other beverages
+Gin;Beverages;Distilled beverages
+Grape wine;Beverages;Fermented beverages
+Horchata;Beverages;Other beverages
+Liquor;Beverages;Distilled beverages
+Madeira wine;Beverages;Fortified wines
+Port wine;Beverages;Fortified wines
+Rum;Beverages;Distilled beverages
+Sake;Beverages;Fermented beverages
+Sherry;Beverages;Fortified wines
+Spirit;Beverages;Distilled beverages
+Vegetable juice;Beverages;Other beverages
+Vermouth;Beverages;Fortified wines
+Vodka;Beverages;Distilled beverages
+Water;Beverages;Waters
+Whisky;Beverages;Distilled beverages
+Annual wild rice;Cereals and cereal products;Cereals
+Bagel;Cereals and cereal products;Leavened breads
+Barley;Cereals and cereal products;Cereals
+Bulgur;Cereals and cereal products;Cereal products
+Buckwheat;Cereals and cereal products;Cereals
+Corn;Cereals and cereal products;Cereals
+Corn grits;Cereals and cereal products;Cereal products
+Cornbread;Cereals and cereal products;Flat breads
+Crisp bread;Cereals and cereal products;Flat breads
+Dough;Cereals and cereal products;Doughs
+Flour;Cereals and cereal products;Cereal products
+Focaccia;Cereals and cereal products;Flat breads
+French toast;Cereals and cereal products;Leavened breads
+Hard wheat;Cereals and cereal products;Cereals
+Millet;Cereals and cereal products;Cereals
+Multigrain bread;Cereals and cereal products;Leavened breads
+Oat;Cereals and cereal products;Cereals
+Oat bread;Cereals and cereal products;Leavened breads
+Oriental wheat;Cereals and cereal products;Cereals
+Pan dulce;Cereals and cereal products;Leavened breads
+Pasta;Cereals and cereal products;Cereal products
+Piki bread;Cereals and cereal products;Flat breads
+Pita bread;Cereals and cereal products;Flat breads
+Potato bread;Cereals and cereal products;Other breads
+Raisin bread;Cereals and cereal products;Sweet breads
+Red rice;Cereals and cereal products;Cereals
+Rice;Cereals and cereal products;Cereals
+Rice bread;Cereals and cereal products;Leavened breads
+Rye;Cereals and cereal products;Cereals
+Rye bread;Cereals and cereal products;Leavened breads
+Semolina;Cereals and cereal products;Cereal products
+Sorghum;Cereals and cereal products;Cereals
+Sourdough;Cereals and cereal products;Doughs
+Spelt;Cereals and cereal products;Cereals
+Tartary buckwheat;Cereals and cereal products;Cereals
+Tortilla;Cereals and cereal products;Flat breads
+Triticale;Cereals and cereal products;Cereals
+Wheat;Cereals and cereal products;Cereals
+Wheat bread;Cereals and cereal products;Leavened breads
+Wild rice;Cereals and cereal products;Cereals
+Zwieback;Cereals and cereal products;Leavened breads
+Chocolate;Cocoa and cocoa products;Cocoa products
+Cocoa bean;Cocoa and cocoa products;Cocoa
+Cocoa butter;Cocoa and cocoa products;Cocoa products
+Cocoa liquor;Cocoa and cocoa products;Cocoa products
+Cocoa powder;Cocoa and cocoa products;Cocoa products
+Hot chocolate;Cocoa and cocoa products;Cocoa products
+Arabica coffee;Coffee and coffee products;Coffee
+Coffee;Coffee and coffee products;Coffee
+Coffee mocha;Coffee and coffee products;Coffee products
+Robusta coffee;Coffee and coffee products;Coffee
+Akutaq;Confectioneries;Desserts
+Chocolate mousse;Confectioneries;Desserts
+Chocolate spread;Confectioneries;Spreads
+Dragée;Confectioneries;Candies
+Dulce de leche;Confectioneries;Spreads
+Frozen yogurt;Confectioneries;Frozen desserts
+Fudge;Confectioneries;Candies
+Honey;Confectioneries;Other confectioneries
+Ice cream;Confectioneries;Frozen desserts
+Icing;Confectioneries;Other confectioneries
+Junket;Confectioneries;Milk desserts
+Liquorice;Confectioneries;Candies
+Marshmallow;Confectioneries;Candies
+Marzipan;Confectioneries;Other confectioneries
+Meringue;Confectioneries;Other confectioneries
+Milkshake;Confectioneries;Frozen desserts
+Nougat;Confectioneries;Other confectioneries
+Pastry;Confectioneries;Desserts
+Pudding;Confectioneries;Desserts
+Sweet custard;Confectioneries;Milk desserts
+Toffee;Confectioneries;Other confectioneries
+Eggs;Eggs;Eggs
+Lard;Fats and oils;Animal fats
+Margarine;Fats and oils;Vegetable fats
+Margarine-like spread;Fats and oils;Vegetable fats
+Tallow;Fats and oils;Animal fats
+Apple;Fruits;Pomes
+Apricot;Fruits;Drupes
+Pear;Fruits;Pomes
+Banana;Fruits;Tropical fruits
+Black chokeberry;Fruits;Berries
+Black crowberry;Fruits;Berries
+Black elderberry;Fruits;Berries
+Black mulberry;Fruits;Berries
+Black raspberry;Fruits;Berries
+Blackcurrant;Fruits;Berries
+Blueberry;Fruits;Berries
+Boysenberry;Fruits;Berries
+Breadfruit;Fruits;Tropical fruits
+Cherimoya;Fruits;Tropical fruits
+Cherry;Fruits;Drupes
+Cloudberry;Fruits;Berries
+Coconut;Fruits;Tropical fruits
+Chokecherry;Fruits;Drupes
+Persimmon;Fruits;Tropical fruits
+Custard apple;Fruits;Tropical fruits
+Deerberry;Fruits;Berries
+Durian;Fruits;Tropical fruits
+Elderberry;Fruits;Berries
+Elliott's blueberry;Fruits;Berries
+European cranberry;Fruits;Berries
+European plum;Fruits;Drupes
+Evergreen huckleberry;Fruits;Berries
+Feijoa;Fruits;Tropical fruits
+Fig;Fruits;Other fruits
+Fox grape;Fruits;Berries
+French plantain;Fruits;Tropical fruits
+Fruit preserve;Fruits;Fruit products
+Gooseberry;Fruits;Berries
+Grape;Fruits;Berries
+Grapefruit;Fruits;Citrus
+Guava;Fruits;Tropical fruits
+Jackfruit;Fruits;Tropical fruits
+Jostaberry;Fruits;Berries
+Kiwi;Fruits;Tropical fruits
+Kumquat;Fruits;Tropical fruits
+Lemon;Fruits;Citrus
+Lichee;Fruits;Tropical fruits
+Lime;Fruits;Citrus
+Loganberry;Fruits;Berries
+Longan;Fruits;Tropical fruits
+Loquat;Fruits;Tropical fruits
+Malabar plum;Fruits;Tropical fruits
+Malus;Fruits;Pomes
+Mamey sapote;Fruits;Tropical fruits
+Mammee apple;Fruits;Tropical fruits
+Mandarin orange;Fruits;Citrus
+Mango;Fruits;Tropical fruits
+Medlar;Fruits;Pomes
+Mulberry;Fruits;Berries
+Muscadine grape;Fruits;Berries
+Nance;Fruits;Tropical fruits
+Nanking cherry;Fruits;Berries
+Naranjilla;Fruits;Tropical fruits
+Natal plum;Fruits;Tropical fruits
+Nectarine;Fruits;Drupes
+Ohelo berry;Fruits;Berries
+Papaya;Fruits;Tropical fruits
+Passion fruit;Fruits;Tropical fruits
+Peach;Fruits;Drupes
+Pear;Fruits;Pomes
+Persian lime;Fruits;Citrus
+Pineapple;Fruits;Tropical fruits
+Pitanga;Fruits;Tropical fruits
+Pomegranate;Fruits;Tropical fruits
+Prickly pear;Fruits;Tropical fruits
+Pummelo;Fruits;Citrus
+Purple mangosteen;Fruits;Tropical fruits
+Quince;Fruits;Pomes
+Rambutan;Fruits;Tropical fruits
+Red huckleberry;Fruits;Berries
+Red raspberry;Fruits;Berries
+Redcurrant;Fruits;Berries
+Rowanberry;Fruits;Berries
+Rubus Blackberry;Fruits;Berries
+Salmonberry;Fruits;Berries
+Sapodilla;Fruits;Tropical fruits
+Strawberry;Fruits;Berries
+Strawberry guava;Fruits;Berries
+Grape;Fruits;Berries
+Cherry;Fruits;Drupes
+Orange;Fruits;Citrus
+Rowanberry;Fruits;Berries
+Tamarind;Fruits;Tropical fruits
+Wax apple;Fruits;Tropical fruits
+Bitter gourd;Gourds;Gourds
+Butternut squash;Gourds;Gourds
+Calabash;Gourds;Gourds
+Chayote;Gourds;Gourds
+Cucumber;Gourds;Gourds
+Cucurbita;Gourds;Gourds
+Green zucchini;Gourds;Gourds
+Horned melon;Gourds;Gourds
+Japanese pumpkin;Gourds;Gourds
+Muskmelon;Gourds;Gourds
+Sunburst squash;Gourds;Gourds
+Tinda;Gourds;Gourds
+Towel gourd;Gourds;Gourds
+Watermelon;Gourds;Gourds
+Wax gourd;Gourds;Gourds
+Winter squash;Gourds;Gourds
+Yellow zucchini;Gourds;Gourds
+Alfalfa;Herbs and Spices;Herbs
+Amaranth;Herbs and Spices;Herbs
+Angelica;Herbs and Spices;Herbs
+Anise;Herbs and Spices;Herbs
+Babassu palm;Herbs and Spices;Oilseed crops
+Borage;Herbs and Spices;Oilseed crops
+Breadnut tree seed;Herbs and Spices;Other seeds
+Canola;Herbs and spices;Oilseed crops
+Capers;Herbs and Spices;Spices
+Caraway;Herbs and Spices;Spices
+Cardamom;Herbs and Spices;Spices
+Celery leaves;Herbs and Spices;Herbs
+Ceylon cinnamon;Herbs and Spices;Spices
+Chervil;Herbs and Spices;Spices
+Chia;Herbs and Spices;Other seeds
+Chinese chives;Herbs and Spices;Herbs
+Chinese cinnamon;Herbs and Spices;Spices
+Chives;Herbs and Spices;Herbs
+Cinnamon;Herbs and Spices;Spices
+Cloves;Herbs and Spices;Spices
+Oregano;Herbs and Spices;Herbs
+Sage;Herbs and Spices;Herbs
+Thyme;Herbs and Spices;Herbs
+Verbena;Herbs and Spices;Herbs
+Coriander;Herbs and Spices;Herbs
+Cornmint;Herbs and Spices;Herbs
+Cottonseed;Herbs and Spices;Oilseed crops
+Cumin;Herbs and Spices;Spices
+Cupuaçu;Herbs and Spices;Oilseed crops
+Curry powder;Herbs and Spices;Herb and spice mixtures
+Dandelion;Herbs and Spices;Herbs
+Dill;Herbs and Spices;Herbs
+Dock;Herbs and Spices;Herbs
+Epazote;Herbs and Spices;Herbs
+Evening primrose;Herbs and Spices;Oilseed crops
+Fennel;Herbs and Spices;Herbs
+Fenugreek;Herbs and Spices;Herbs
+Fireweed;Herbs and Spices;Herbs
+Flaxseed;Herbs and Spices;Oilseed crops
+Garlic;Herbs and Spices;Herbs
+German camomile;Herbs and Spices;Herbs
+Ginger;Herbs and Spices;Spices
+Ginkgo nuts;Herbs and Spices;Other seeds
+Ginseng;Herbs and Spices;Spices
+Hedge mustard;Herbs and Spices;Other seeds
+Horseradish;Herbs and Spices;Spices
+Hyssop;Herbs and Spices;Herbs
+Italian oregano;Herbs and Spices;Herbs
+Lemon balm;Herbs and Spices;Herbs
+Lemon grass;Herbs and Spices;Herbs
+Lemon thyme;Herbs and Spices;Herbs
+Lemon verbena;Herbs and Spices;Herbs
+Linden;Herbs and Spices;Herbs
+Lotus;Herbs and Spices;Other seeds
+Lovage;Herbs and Spices;Herbs
+Mexican oregano;Herbs and Spices;Herbs
+Mint;Herbs and Spices;Herbs
+Mugwort;Herbs and Spices;Herbs
+Nutmeg;Herbs and Spices;Spices
+Oil palm;Herbs and Spices;Oilseed crops
+Orange mint;Herbs and Spices;Herbs
+Parsley;Herbs and Spices;Herbs
+Pepper Spice;Herbs and Spices;Spices
+Peppermint;Herbs and Spices;Herbs
+Pineappple sage;Herbs and Spices;Herbs
+Poppy;Herbs and Spices;Oilseed crops
+Pot marjoram;Herbs and Spices;Herbs
+Purslane;Herbs and Spices;Herbs
+Quinoa;Herbs and Spices;Other seeds
+Roman camomile;Herbs and Spices;Herbs
+Rose hip;Herbs and Spices;Herbs
+Roselle;Herbs and Spices;Herbs
+Rosemary;Herbs and Spices;Herbs
+Rowal;Herbs and Spices;Other seeds
+Safflower;Herbs and Spices;Oilseed crops
+Saffron;Herbs and Spices;Spices
+Sago palm;Herbs and Spices;Oilseed crops
+Sesame;Herbs and Spices;Oilseed crops
+Shea tree;Herbs and Spices;Oilseed crops
+Silver linden;Herbs and Spices;Herbs
+Small-leaf linden;Herbs and Spices;Herbs
+Soft-necked garlic;Herbs and Spices;Herbs
+Sorrel;Herbs and Spices;Herbs
+Sourdock;Herbs and Spices;Herbs
+Spearmint;Herbs and Spices;Herbs
+Star anise;Herbs and Spices;Spices
+Summer savory;Herbs and Spices;Herbs
+Sunflower;Herbs and Spices;Oilseed crops
+Sweet basil;Herbs and Spices;Herbs
+Sweet bay;Herbs and Spices;Herbs
+Sweet marjoram;Herbs and Spices;Herbs
+Tarragon;Herbs and Spices;Herbs
+Tea leaf willow;Herbs and Spices;Herbs
+Teff;Herbs and Spices;Herbs
+Turmeric;Herbs and Spices;Spices
+Turnip;Herbs and Spices;Herbs
+Ucuhuba;Herbs and Spices;Oilseed crops
+Vanilla;Herbs and Spices;Spices
+Wasabi;Herbs and Spices;Spices
+Watercress;Herbs and Spices;Herbs
+Welsh onion;Herbs and Spices;Herbs
+White mustard;Herbs and Spices;Spices
+Wild celery;Herbs and Spices;Spices
+Winter savory;Herbs and Spices;Herbs
+Yellow pond-lily;Herbs and Spices;Herbs
+Cow milk;Milk and milk products;Unfermented milks
+Butter;Milk and milk products;Other milk products
+Butterfat;Milk and milk products;Other milk products
+Buttermilk;Milk and milk products;Fermented milks
+Casein;Milk and milk products;Other milk products
+Cheese;Milk and milk products;Fermented milk products
+Condensed milk;Milk and milk products;Other milk products
+Cream;Milk and milk products;Other milk products
+Dried milk;Milk and milk products;Other milk products
+Evaporated milk;Milk and milk products;Other milk products
+Kefir;Milk and milk products;Fermented milks
+Processed cheese;Milk and milk products;Fermented milk products
+Whey;Milk and milk products;Other milk products
+Ymer;Milk and milk products;Fermented milk products
+Yogurt;Milk and milk products;Fermented milk products
+Acorn;Nuts;Nuts
+Almond;Nuts;Nuts
+Beech nut;Nuts;Nuts
+Black walnut;Nuts;Nuts
+Brazil nut;Nuts;Nuts
+Butternut;Nuts;Nuts
+Cashew nut;Nuts;Nuts
+Chestnut;Nuts;Nuts
+Chinese chestnut;Nuts;Nuts
+Colorado pinyon;Nuts;Nuts
+Hazelnut;Nuts;Nuts
+Walnut;Nuts;Nuts
+European chestnut;Nuts;Nuts
+Hickory nut;Nuts;Nuts
+Japanese chestnut;Nuts;Nuts
+Japanese walnut;Nuts;Nuts
+Macadamia nut;Nuts;Nuts
+Mixed nuts;Nuts;Nuts
+Peanut;Nuts;Nuts
+Pecan nut;Nuts;Nuts
+Pili nut;Nuts;Nuts
+Pine nut;Nuts;Nuts
+Pistachio;Nuts;Nuts
+Adzuki bean;Pulses;Beans
+Bean;Pulses;Beans
+Black-eyed pea;Pulses;Peas
+Broad bean;Pulses;Beans
+Catjang pea;Pulses;Peas
+Chickpea;Pulses;Peas
+Climbing bean;Pulses;Beans
+Pea;Pulses;Peas
+Cowpea;Pulses;Peas
+Gram bean;Pulses;Beans
+Grass pea;Pulses;Peas
+Green bean;Pulses;Beans
+Hyacinth bean;Pulses;Beans
+Lentils;Pulses;Lentils
+Lima bean;Pulses;Beans
+Lupine;Pulses;Other pulses
+Moth bean;Pulses;Beans
+Mung bean;Pulses;Beans
+Pigeon pea;Pulses;Peas
+Scarlet bean;Pulses;Beans
+White lupine;Pulses;Other pulses
+Winged bean;Pulses;Beans
+Yardlong bean;Pulses;Peas
+Yellow wax bean;Pulses;Beans
+Miso;Soy;Soy products
+Natto;Soy;Soy products
+Soy bean;Soy;Soy products
+Soy cream;Soy;Soy products
+Soy milk;Soy;Soy products
+Soy sauce;Soy;Soy products
+Soy yogurt;Soy;Soy products
+Tofu;Soy;Soy products
+Greenthread tea;Teas;Herbal teas
+Hibiscus tea;Teas;Herbal teas
+Tea;Teas;Herbal teas
+Agave;Vegetables;Other vegetables
+Alpine sweetvetch;Vegetables;Root vegetables
+Arrowhead;Vegetables;Tubers
+Arrowroot;Vegetables;Tubers
+Asparagus;Vegetables;Shoot vegetables
+Avocado;Vegetables;Fruit vegetables
+Bamboo shoots;Vegetables;Shoot vegetables
+Black cabbage;Vegetables;Cabbages
+Black radish;Vegetables;Root vegetables
+Black salsify;Vegetables;Root vegetables
+Brassicas;Vegetables;Brassicas
+Broccoli;Vegetables;Cabbages
+Brussel sprouts;Vegetables;Cabbages
+Burdock;Vegetables;Root vegetables
+Cabbage;Vegetables;Cabbages
+Cardoon;Vegetables;Shoot vegetables
+Carob;Vegetables;Other vegetables
+Carrot;Vegetables;Root vegetables
+Cassava;Vegetables;Tubers
+Cauliflower;Vegetables;Cabbages
+Celeriac;Vegetables;Root vegetables
+Celery stalks;Vegetables;Stalk vegetables
+Chanterelle;Vegetables;Mushrooms
+Cherry tomato;Vegetables;Fruit vegetables
+Chicory;Vegetables;Root vegetables
+Chicory leaves;Vegetables;Leaf vegetables
+Chicory roots;Vegetables;Root vegetables
+Chinese broccoli;Vegetables;Cabbages
+Chinese cabbage;Vegetables;Cabbages
+Chinese mustard;Vegetables;Cabbages
+Chinese water chestnut;Vegetables;Other vegetables
+Cloud ear fungus;Vegetables;Mushrooms
+Beet;Vegetables;Leaf vegetables
+Mushroom;Vegetables;Mushrooms
+Salsify;Vegetables;Root vegetables
+Corn salad;Vegetables;Leaf vegetables
+Daikon radish;Vegetables;Root vegetables
+Eggplant;Vegetables;Fruit vegetables
+Endive;Vegetables;Leaf vegetables
+Enokitake;Vegetables;Mushrooms
+Garland chrysanthemum;Vegetables;Leaf vegetables
+Giant butterbur;Vegetables;Other vegetables
+Globe artichoke;Vegetables;Shoot vegetables
+Green bell pepper;Vegetables;Fruit vegetables
+Green vegetables;Vegetables;Green vegetables
+Groundcherry;Vegetables;Fruit vegetables
+Heart of palm;Vegetables;Other vegetables
+Horseradish tree;Vegetables;Other vegetables
+Italian sweet red pepper;Vegetables;Fruit vegetables
+Jerusalem artichoke;Vegetables;Tubers
+Jew's ear;Vegetables;Mushrooms
+Jicama;Vegetables;Root vegetables
+Jute;Vegetables;Leaf vegetables
+Kai-lan;Vegetables;Cabbages
+Kale;Vegetables;Cabbages
+Kohlrabi;Vegetables;Root vegetables
+Komatsuna;Vegetables;Cabbages
+Lambsquarters;Vegetables;Leaf vegetables
+Leek;Vegetables;Onion-family vegetables
+Lettuce;Vegetables;Leaf vegetables
+Maitake;Vegetables;Mushrooms
+Malabar spinach;Vegetables;Leaf vegetables
+Mexican groundcherry;Vegetables;Fruit vegetables
+Morchella;Vegetables;Mushrooms
+Mountain yam;Vegetables;Tubers
+Mushrooms;Vegetables;Mushrooms
+Mustard spinach;Vegetables;Cabbages
+Napa cabbage;Vegetables;Cabbages
+Narrowleaf cattail;Vegetables;Other vegetables
+New Zealand spinach;Vegetables;Leaf vegetables
+Nopal;Vegetables;Other vegetables
+Okra;Vegetables;Other vegetables
+Olive;Vegetables;Fruit vegetables
+Onion;Vegetables;Onion-family vegetables
+Orange bell pepper;Vegetables;Fruit vegetables
+Oregon yampah;Vegetables;Root vegetables
+Ostrich fern;Vegetables;Leaf vegetables
+Oxheart cabbage;Vegetables;Cabbages
+Oyster mushroom;Vegetables;Mushrooms
+Pak choy;Vegetables;Cabbages
+Parsnip;Vegetables;Root vegetables
+Pepper;Vegetables;Fruit vegetables
+Potato;Vegetables;Tubers
+Prairie turnip;Vegetables;Root vegetables
+Radish;Vegetables;Root vegetables
+Rape;Vegetables;Root vegetables
+Rapini;Vegetables;Cabbages
+Red beetroot;Vegetables;Root vegetables
+Red bell pepper;Vegetables;Fruit vegetables
+Rocket salad;Vegetables;Leaf vegetables
+Romaine lettuce;Vegetables;Leaf vegetables
+Sacred lotus;Vegetables;Other vegetables
+Savoy cabbage;Vegetables;Cabbages
+Sesbania flower;Vegetables;Other vegetables
+Shallot;Vegetables;Onion-family vegetables
+Shiitake;Vegetables;Mushrooms
+Spinach;Vegetables;Leaf vegetables
+Swamp cabbage;Vegetables;Leaf vegetables
+Swede;Vegetables;Root vegetables
+Sweet potato;Vegetables;Tubers
+Swiss chard;Vegetables;Leaf vegetables
+Taro;Vegetables;Root vegetables
+Thistle;Vegetables;Root vegetables
+Tree fern;Vegetables;Other vegetables
+Tronchuda cabbage;Vegetables;Cabbages
+White cabbage;Vegetables;Cabbages
+Wild carrot;Vegetables;Root vegetables
+Wild leek;Vegetables;Onion-family vegetables
+Yam;Vegetables;Tubers
+Yautia;Vegetables;Leaf vegetables
+Yellow bell pepper;Vegetables;Fruit vegetables
